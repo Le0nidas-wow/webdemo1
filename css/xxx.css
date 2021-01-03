@@ -1,0 +1,22 @@
+#floatdiv {
+    width: 330px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5c1a16;
+    z-index: 999;
+    border: 0px solid #ccc;
+    border-radius: 10px 10px;
+}
+
+.floatdiv span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: darksalmon;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 20% 20%;
+}

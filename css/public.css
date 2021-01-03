@@ -1,0 +1,210 @@
+/**********header************/
+
+.xf_header {
+    width: 100%;
+    height: 88px;
+    background: #fff;
+    border-bottom: 1px solid #13274A;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+header {
+    width: 1251px;
+    height: 88px;
+    /*background: pink;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header>a {
+    float: left;
+}
+
+header>a img {
+    width: 200px;
+    height: 78px;
+    margin-top: 5px;
+}
+
+header .city {
+    float: left;
+    margin-top: 29px;
+    font-size: 12px;
+}
+
+header .city>img {
+    width: 17px;
+    height: 17px;
+    margin-left: 31px;
+    margin-right: 7px;
+}
+
+header .city>a {
+    padding: 9px;
+    background: #cccccc;
+    color: #fff;
+    margin-left: 13px;
+}
+
+header .nav {
+    float: left;
+    height: 78px;
+    line-height: 77px;
+    margin-left: 66px;
+}
+
+header .nav a {
+    color: #220e03;
+    margin-right: 29px;
+}
+
+header .nav a:last-child {
+    margin-right: 0;
+}
+
+header .nav a:first-child {
+    margin-right: 36px;
+}
+
+header .link {
+    float: right;
+    margin-top: 15px;
+}
+
+header .link>img {
+    width: 23px;
+    height: 23px;
+    float: left;
+    margin-right: 23px;
+}
+
+header .link>a {
+    padding: 11px 8px 12px 8px;
+    border: 1px solid #989898;
+    color: #03000e;
+}
+
+
+/**********footer**********/
+
+.xf_footer {
+    height: 125px;
+    background: #5782b7;
+}
+
+footer {
+    width: 1251px;
+    height: 125px;
+    /*background: red;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .footer1 {
+    overflow: hidden;
+}
+
+footer .footer1 .msg {
+    margin-top: 37px;
+    margin-left: 8px;
+    float: left;
+}
+
+footer .footer1 .msg>a {
+    color: #fff;
+    padding-left: 22px;
+    padding-right: 18px;
+    border-right: 1px solid #b3a59c;
+}
+
+footer .footer1 .msg>a:last-child {
+    border: 0;
+}
+
+footer .footer1 .tel {
+    float: left;
+    margin-top: 37px;
+    margin-left: 75px;
+}
+
+footer .footer1 .tel a {
+    margin-right: 45px;
+    color: #fff;
+}
+
+footer .footer1 .tel a img {
+    float: left;
+    margin-right: 3px;
+}
+
+footer .footer2 {
+    text-align: center;
+    margin-top: 34px;
+    color: #fff;
+}
+
+footer .footer2 .copyright span {
+    margin-right: 40px;
+}
+
+.dropbtn {
+    background-color: #1b4d82;
+    color: white;
+    padding: 3px 20px;
+    font-size: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* 容器 <div> - 需要定位下拉内容 */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* 下拉内容 (默认隐藏) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 下拉菜单的链接 */
+
+.dropdown-content a {
+    color: black;
+    padding: 3px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* 在鼠标移上去后显示下拉菜单 */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+
+.dropdown:hover .dropbtn {
+    background-color: #13274a;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/xxx.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/action.js">
+    </script>
+    <style type="texts">
+        #panel,#flip { padding:5px; text-align:center; background-color: #ffffff; border:solid 1px #ffffff; } #panel { padding:50px; display:none; }
+    </style>
+    <script src="js/cookies.js">
+    </script>
+
+</head>
+
+<body onload="checkCookie()" onload="setting()">
+    <div id="floatdiv" class="floatdiv">
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=29482215&auto=1&height=66"></iframe>
+        <span id="Clickclose">X</span>
+    </div>
+    <!--
+			页面的版心宽度  1251px
+		-->
+    <div id="box">
+        <!--头部-->
+        <div class="xf_header">
+            <header>
+                <a href="index.html">
+                    <img src="img/id.jpg" />
+                </a>
+                <div class="city">
+                    <img src="img/icon-address.png" />
+                    <span><text id="mine"></text><a id="a1" href="login.html">请先登录</a></span>
+                    <a href="#"><button type="button" onclick="logout()">退出登录</button></a>
+                </div>
+                <div class="nav">
+                    <a href="index.html">全部</a>
+                    <a href="mon.html">怪兽</a>
+                    <a href="mag.html">魔法</a>
+                    <a href="tra.html">陷阱</a>
+                    <a href="#">关于我们</a>
+                </div>
+                <div class="link">
+                    <img src="img/i-search.jpg" />
+                    <img src="img/i-cart.jpg" />
+                    <img src="img/i-user.jpg" />
+                    <div class="dropdown">
+                        <button class="dropbtn">联系我们</button>
+                        <div class="dropdown-content">
+                            <a href="#">QQ:11111</a>
+                            <a href="#">tel:111111</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!--banner-->
+        <div class="banner">
+            <a href="details.html">
+                <img src="img/bg.jpg" />
+            </a>
+        </div>
+        <div class="cake_type">
+            <div>
+                <a href="mon.html">
+                    <img src="img/cake_03.jpg" />
+                </a>
+                <a href="mon.html">
+                    <span>Monster</span>
+                    <span>怪兽</span>
+                </a>
+            </div>
+            <div>
+                <a href="mag.html">
+                    <img src="img/cake_05.jpg" />
+                </a>
+                <a href="mag.html">
+                    <span>Magic</span>
+                    <span>魔法</span>
+                </a>
+            </div>
+            <div>
+                <a href="tra.html">
+                    <img src="img/cake_07.jpg" />
+                </a>
+                <a href="tra.html">
+                    <span>Trap</span>
+                    <span>陷阱</span>
+                </a>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="xf_footer">
+            <footer>
+                <div class="footer1">
+                    <div class="msg">
+                        <a href="https://www.yugioh-card.com/japan/howto/">游戏规则</a>
+                        <a href="#">视频介绍</a>
+                        <a href="#">决斗工具</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">回到顶部</a>
+                        <a href="#">关于音乐</a>
+                    </div>
+                    <div class="tel">
+                        <a href="#">
+                            <span>964923436</span>
+                        </a>
+                        <a href="#">百度百科</a>
+                        <a href="#">查卡器</a>
+                    </div>
+                </div>
+                <div class="footer2">
+                    <div class="copyright">
+                        <span>19051620</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

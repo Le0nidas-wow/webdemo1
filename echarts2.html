@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="xxx.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+
+   </head>
+   <body style="height: 90%; margin: 0">
+       <div id="container" style="height: 100%"></div>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4/dist/echarts.min.js"></script>
+       <script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+var item1 = {
+    color: '#14284b'
+};
+var item2 = {
+    color: '#163e70'
+};
+var item3 = {
+    color: '#163e70'
+};
+
+var data = [{
+    name :'怪兽',
+    value:7304,
+    itemStyle:item1,
+    children: [{
+        name:'通常',
+        value: 1000,
+        itemStyle: item3
+    },{
+        name:'效果',
+        value: 4006,
+        itemStyle: item3,
+    },{
+        name:'特殊召唤',
+        value: 98,
+        itemStyle: item3,
+    },{
+        name:'反转',
+        value: 172,
+        itemStyle: item3,
+    },{
+        name:'灵魂',
+        value: 33,
+        itemStyle: item3,
+    },{
+        name:'卡通',
+        value: 17,
+        itemStyle: item3,
+    },{
+        name:'同盟',
+        value: 37,
+        itemStyle: item3,
+    },{
+        name:'仪式',
+        value: 100,
+        itemStyle: item3,
+    },{
+        name:'融合',
+        value: 183,
+        itemStyle: item3,
+    },{
+        name:'同调',
+        value: 330,
+        itemStyle: item3,
+    },{
+        name:'调整',
+        value: 384,
+        itemStyle: item3,
+    },{
+        name:'超量',
+        value: 428,
+        itemStyle: item3,
+    },{
+        name:'灵摆',
+        value: 209,
+        itemStyle: item3,
+    },{
+        name:'连接',
+        value: 304,
+        itemStyle: item3,
+    }],
+}, {
+    name :'魔法',
+    value:2083,
+    itemStyle:item1,
+    children: [{
+        name:'通常',
+        value: 841,
+        itemStyle: item3
+    },{
+        name:'速攻',
+        value: 357,
+        itemStyle: item3,
+    },{
+        name:'永续',
+        value: 347,
+        itemStyle: item3,
+    },{
+        name:'场地',
+        value: 229,
+        itemStyle: item3,
+    },{
+        name:'仪式',
+        value: 64,
+        itemStyle: item3,
+    },{
+        name:'装备',
+        value: 245,
+        itemStyle: item3,
+    }],
+}, {
+    name :'陷阱',
+    value:1634,
+    itemStyle:item1,
+    children: [{
+        name:'通常',
+        value: 1061,
+        itemStyle: item3
+    },{
+        name:'反击',
+        value: 135,
+        itemStyle: item3,
+    },{
+        name:'永续',
+        value: 438,
+        itemStyle: item3,
+    }],
+}];
+
+option = {
+    series: {
+        radius: ['15%', '80%'],
+        type: 'sunburst',
+        sort: null,
+        highlightPolicy: 'ancestor',
+        data: data,
+        label: {
+            rotate: 'radial'
+        },
+        levels: [],
+        itemStyle: {
+            color: '#ddd',
+            borderWidth: 2
+        }
+    }
+};
+;
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+       </script>
+       
+   </body>
+</html>

@@ -1,0 +1,92 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+dl,
+dd,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    background-color: #eee;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+input,
+select,
+button,
+textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="file"] {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ddd;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ddd;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ddd;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ddd;
+}
